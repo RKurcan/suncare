@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.geekchallender.teknodayi" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Teknodayi</name>
+<widget id="P973R54DWH.com.sefine.suncare" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Suncare Sauna</name>
     <description>
-        Teknodayi mobil uygulamasi
+        Suncare Sauna mobil uygulamasi
     </description>
-    <author email="htolgasahin@gmail.com" href="http://htolgasahin.me">
-        Hilmi Tolga Sahin
+    <author email="owner@rkurcan.com" href="http://rkurcan.com">
+        Remzi Kurçan
     </author>
     <content src="index.html" />
     <plugin name="cordova-plugin-whitelist" version="1" />
@@ -16,12 +16,36 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+
+
     <platform name="android">
+		<preference name="SplashScreenDelay" value="2000" />
         <allow-intent href="market:*" />
-        <icon src="www/dayi.png" />
+        <icon src="180x180.png" />
+		<splash src="splash-dikey-2.png" density="port-xhdpi"/>
+		<splash src="splash-yatay-2.png" density="land-xhdpi"/>
     </platform>
     <platform name="ios">
+		<preference name="SplashScreenDelay" value="2000" />
+	 
+        <!-- iPhone 6 Plus  -->
+        <icon src="180x180.png" width="180" height="180" />
+        <!-- iOS 7.0+ -->
+        <!-- iPhone / iPod Touch  -->
+ 
+        <icon src="120x120.png" width="120" height="120" />
+        <!-- iPad -->
+        <icon src="76x76.png" width="76" height="76" />
+        <icon src="72x72.png" width="72" height="72" />
+        <icon src="152x152.png" width="152" height="152" />
+        <!-- iOS 6.1 -->
+
+        <icon src="57x57.png" width="57" height="57" />
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
+		<splash src="splash-dikey-1.png" width="1536" height="2048"/>
+		<splash src="splash-yatay-1.png" width="2048" height="1536"/>
+		
     </platform>
+	
 </widget>
